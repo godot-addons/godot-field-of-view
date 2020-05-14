@@ -13,18 +13,18 @@ Godot script that allow use of Field of View in (currently) 2d game.
 
 ## Current State
 
-![Image 1](/example/assets/screenshots/images/print_1.jpg)
-![Image 2](/example/assets/screenshots/images/print_2.jpg)
-![Image 3](/example/assets/screenshots/images/print_3.jpg)
-![Image 4](/example/assets/screenshots/images/print_4.jpg)
-![Image 5](/example/assets/screenshots/images/print_5.jpg)
-![Image 6](/example/assets/screenshots/images/print_6.jpg)
-![Image 7](/example/assets/screenshots/images/print_7.jpg)
-![Image 8](/example/assets/screenshots/images/print_8.jpg)
+![Image 1](/example/assets/screenshots/print_1.jpg)
+![Image 2](/example/assets/screenshots/print_2.jpg)
+![Image 3](/example/assets/screenshots/print_3.jpg)
+![Image 4](/example/assets/screenshots/print_4.jpg)
+![Image 5](/example/assets/screenshots/print_5.jpg)
+![Image 6](/example/assets/screenshots/print_6.jpg)
+![Image 7](/example/assets/screenshots/print_7.jpg)
+![Image 8](/example/assets/screenshots/print_8.jpg)
 
 ## Variables
 
-![Image 1](/example/assets/screenshots/images/variables.jpg)
+![Image 1](/example/assets/screenshots/variables.jpg)
 
 # Credits / Links
 
