@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://example/src/Block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://example/src/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://example/src/Enemy1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://example/src/Enemy2.tscn" type="PackedScene" id=4]
+
+[node name="Game" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 573.248, 577.546 )
+danger_text_path = NodePath("../CanvasLayer/Danger")
+warn_text_path = NodePath("../CanvasLayer/Warning")
+
+[node name="CameraD2" type="Camera2D" parent="Player"]
+position = Vector2( 0.445007, 5.39999 )
+current = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+
+[node name="Blocks" type="Node" parent="."]
+
+[node name="Block1" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 584, 64 )
+
+[node name="Block2" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 128, 144 )
+
+[node name="Block3" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 200, 456 )
+
+[node name="Block4" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 480, 312 )
+
+[node name="Enemies" type="Node" parent="."]
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 231.79, 256.982 )
+
+[node name="Enemy1" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 426.054, 158.539 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Warning" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 16.0
+margin_top = 528.0
+margin_right = 916.0
+margin_bottom = 560.0
+text = "WARNING"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Danger" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 16.0
+margin_top = 568.0
+margin_right = 916.0
+margin_bottom = 600.0
+text = "DANGER"
